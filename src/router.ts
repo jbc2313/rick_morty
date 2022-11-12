@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from './
+import Home from './components/Home.vue'
 import Rick from './components/Rick.vue'
 import Morty from './components/Morty.vue'
 

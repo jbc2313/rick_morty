@@ -6,9 +6,7 @@ import Index from './components/Index.vue'
 
 <template>
     <Index /> 
-    <div>
-        
-    </div>
+    <router-view></router-view>
 </template>
 
 <style scoped>
