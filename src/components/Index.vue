@@ -5,9 +5,9 @@
 <template>
     <nav>
         <ul class="links">
-            <li><a>Home</a></li>
-            <li><a>Rick</a></li>
-            <li><a>Morty</a></li>
+            <router-link to="/">Home</router-link>
+            <router-link to="/rick">Rick</router-link>
+            <router-link to="/morty">Morty</router-link>
         </ul>
     </nav>
 

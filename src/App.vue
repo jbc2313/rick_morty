@@ -5,7 +5,10 @@ import Index from './components/Index.vue'
 </script>
 
 <template>
-  <Index />
+    <Index /> 
+    <div>
+        
+    </div>
 </template>
 
 <style scoped>
