@@ -11,9 +11,12 @@
     <h1>Ricks output here...</h1>
     <ul>
         <li v-for="item in ricks.results">
-            <span v-for="(value, key) in item">
-                {{key}}: {{value}}
-            </span>
+            <p v-for="(value, key, index) in item">
+                #{{index}} [ {{key}}: {{value}} ]
+                <div v-if="index === 8">
+                    <img :src="value"/>
+                </div>
+            </p>
         </li>
     </ul>
 </template>
