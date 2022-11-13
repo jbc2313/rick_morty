@@ -8,7 +8,7 @@
 <template>
     <h1>RICK PAGE</h1>
     <Suspense>
-        <ListChar charName="rick" />
+    <ListChar charName="rick" />
         <template #fallback>
             Loading...
         </template>
