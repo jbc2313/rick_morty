@@ -8,7 +8,6 @@
 </script>
 
 <template>
-    <h1>Ricks output here...</h1>
     <ul class="info">
         <li class="data" v-for="item in ricks.results">
             <div v-for="(value, key, index) in item">
