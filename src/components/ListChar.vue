@@ -11,9 +11,8 @@
     <h1>Ricks output here...</h1>
     <ul>
         <li v-for="item in ricks.results">
-            <span v-for="childItem in item.children">
-                {{item.id}} {{childItem}}
-                {{item.name}} {{childItem}}
+            <span v-for="(value, key) in item">
+                {{key}}: {{value}}
             </span>
         </li>
     </ul>
