@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <h1>RICK PAGE</h1>
+    <h1 class="title">RICK</h1>
     <Suspense>
     <ListChar charName="rick" />
         <template #fallback>
@@ -16,5 +16,8 @@
 </template>
 
 <style scoped>
+    .title {
+        color: green;
+    }
 </style>
 
