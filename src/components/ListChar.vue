@@ -24,6 +24,7 @@
 .data {
     margin: 100px;
     background-color: silver;
+    border: solid black 2px;
     color: black;
     border-radius: 16px;
 }
