@@ -1,5 +1,10 @@
 <script setup lang="ts">
-
+    import { hoverStore } from '../utils/stores';
+    if(hoverStore.currHover === "rick") {
+        console.log('Rick is highlighted');
+    } else if(hoverStore.currHover === "morty") {
+        console.log('Morty is highlighted'); 
+    }
 </script>
 
 <template>
