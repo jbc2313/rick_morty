@@ -8,7 +8,7 @@
     <p>Alive or Dead.</p>
     <div class="imgs">
         <div>
-            <img src="" alt="rick"/>
+            <img src="https://www.looper.com/img/gallery/what-the-mistakes-in-rick-morty-could-really-mean/l-intro-1617842307.jpg" alt="rick"/>
         </div>
         <div>
             <img src="https://assets-prd.ignimgs.com/2021/06/17/ram-501-still-for-promo-03-210308-1623956712640.png" alt="morty"/>
