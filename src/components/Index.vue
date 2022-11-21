@@ -1,12 +1,12 @@
 <script setup lang="ts">
-
+    import { hoverStore } from '../utils/stores';
 </script>
 
 <template>
     <nav>
         <ul class="links">
             <router-link to="/">Home</router-link>
-            <router-link to="/rick">Rick</router-link>
+            <router-link @mouseover="hoverStore.setCurr('rick')" to="/rick">Rick</router-link>
             <router-link to="/morty">Morty</router-link>
         </ul>
     </nav>
