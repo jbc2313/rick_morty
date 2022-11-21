@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1>Welcome/Home Page</h1>
+    <h1>Rick & Morty, from A to Z</h1>
     <p>This is the home of all the ricks and mortys that exist.</p>
     <p>Alive or Dead.</p>
     <div class="imgs">
@@ -11,7 +11,7 @@
             <img src="" alt="rick"/>
         </div>
         <div>
-            <img src="" alt="morty"/>
+            <img src="https://assets-prd.ignimgs.com/2021/06/17/ram-501-still-for-promo-03-210308-1623956712640.png" alt="morty"/>
         </div>
     </div>
 </template>
