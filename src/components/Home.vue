@@ -1,16 +1,26 @@
 <script setup lang="ts">
-    import { watch } from 'vue';
+    import { watch, ref } from 'vue';
     import { hoverStore } from '../utils/stores';
-    if(hoverStore.currHover === "rick") {
-        console.log('Rick is highlighted');
-    } else if(hoverStore.currHover === "morty") {
-        console.log('Morty is highlighted'); 
-    }
+    
+    const imageRick = ref<HTMLImageElement>()
+    const imageMorty = ref<HTMLImageElement>()
 
     watch(
         () => hoverStore.currHover,
         (currHover: any) => {
             console.log(`curr is: ${currHover}`)
+
+            if(hoverStore.currHover === "rick") {
+                console.log('Rick is highlighted');
+                imageRick.value?.classList.add('hovered')
+            } else if(hoverStore.currHover === "morty") {
+                console.log('Morty is highlighted');
+                imageMorty.value?.classList.add('hovered')
+            } else {
+                if(imageMorty.value === undefined || imageRick.value === undefined) return
+                imageMorty.value.classList.remove('hovered')
+                imageRick.value.classList.remove('hovered')
+            }
         }
     )
 </script>
@@ -21,10 +31,10 @@
     <p>Alive or Dead.</p>
     <div class="imgs">
         <div class="image">
-            <img class="pic" src="https://www.looper.com/img/gallery/what-the-mistakes-in-rick-morty-could-really-mean/l-intro-1617842307.jpg" alt="rick"/>
+            <img class="pic" ref="imageRick" src="https://www.looper.com/img/gallery/what-the-mistakes-in-rick-morty-could-really-mean/l-intro-1617842307.jpg" alt="rick"/>
         </div>
         <div class="image">
-            <img class="pic" src="https://assets-prd.ignimgs.com/2021/06/17/ram-501-still-for-promo-03-210308-1623956712640.png" alt="morty"/>
+            <img class="pic" ref="imageMorty" src="https://assets-prd.ignimgs.com/2021/06/17/ram-501-still-for-promo-03-210308-1623956712640.png" alt="morty"/>
         </div>
     </div>
 </template>
@@ -43,6 +53,10 @@
         object-fit: contain;
         height: 100%;
         width: 100%;
+    }
+
+    .hovered {
+        border: solid 3px white;
     }
 </style>
 
