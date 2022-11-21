@@ -57,6 +57,8 @@
 
     .hovered {
         border: solid 3px white;
+        border-radius: 16px;
+        transform: scale(1.3);
     }
 </style>
 
